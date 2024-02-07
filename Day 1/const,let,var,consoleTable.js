@@ -15,3 +15,5 @@ We can use semicolon
 */
 
 console.table([accuntId,accuntName,acuntPasswarod,accuntCity])
+
+// console.log(typeof accuntId);
