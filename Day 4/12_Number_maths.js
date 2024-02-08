@@ -28,10 +28,10 @@
 // console.log(Math.random()*10 +1);
 
 // to generate random integer value btw 1 to 10
-const num = (Math.round(Math.random()*10)+1) 
-console.log(num);
+// const num = (Math.round(Math.random()*10)+1) 
+// console.log(num);
 
 
 // to generate random integer value btw 11 to 99
-console.log((Math.round(Math.random()*10)+1)+10);
+// console.log((Math.round(Math.random()*10)+1)+10);
 

@@ -41,3 +41,5 @@ JsUser.greetingTwo = function(){
 }
 JsUser.greeting()
 JsUser.greetingTwo()
+
+console.log(JsUser);
