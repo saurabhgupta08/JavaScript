@@ -7,3 +7,33 @@ function calculateCartPrice(val1,val2,...num1){
 }
 
 console.log(calculateCartPrice(100,500,400,6200));
+
+
+
+//pass object in argument
+const user ={
+    userName:"Saurabh",
+    price :199
+}
+
+function handleObject(anyObject){
+    console.log(`User is ${anyObject.userName} and price is ${anyObject.price}`);
+}
+
+handleObject(user)
+handleObject({
+    userName:"Nishant Gupta",
+    price:400
+})
+
+
+
+//passing array in argument
+const myNewArray=[1,2222,3,4,5,6,7,8,9]
+
+function printSecond(anyArray){
+    console.log(anyArray[1]);
+}
+
+printSecond(myNewArray)
+printSecond([4,5555,6,7,8,9])
