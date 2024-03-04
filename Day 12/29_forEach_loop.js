@@ -40,3 +40,5 @@ const newArr=[
 newArr.forEach((item)=>{
     console.log(item.LanguageFileName);
 })
+
+//forEach loop is not return
