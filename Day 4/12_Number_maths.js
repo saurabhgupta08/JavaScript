@@ -3,7 +3,7 @@
 
 // const balance = new Number(100)
 // console.log(balance.toString().length)
-// console.log(balance.toFixed(5))
+console.log(balance.toFixed(5))
 
 // const otherNumber = 123.896
 // console.log(otherNumber.toPrecision(3))
@@ -35,3 +35,20 @@
 // to generate random integer value btw 11 to 99
 // console.log((Math.round(Math.random()*10)+1)+10);
 
+// let x = 10;
+// let y = 20;
+// let z = "The result is: "+ x + y;
+// console.log(z);
+
+// let x2 = "1000";
+// let y2 = "10";
+// console.log(typeof (x2/y2));
+// console.log(x2-y2);
+
+// let myNumber = 32;
+// console.log(myNumber.toString(8));
+// myNumber.toString(16);
+// myNumber.toString(12);
+// myNumber.toString(10);
+// myNumber.toString(8);
+// myNumber.toString(2);
