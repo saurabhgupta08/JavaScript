@@ -1,0 +1,47 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+nav{
+  background-color: rgb(73, 186, 238);
+  padding: 10px;
+  margin: 10px;
+  border-radius: 20px;
+  text-align: center;
+}
+  
+  span {
+    display: block;
+  }
+  .canvas {
+    margin: 100px auto 100px;
+    width: 80%;
+    text-align: center;
+  }
+  
+  .button {
+    width: 100px;
+    height: 100px;
+    border: solid black 2px;
+    border-radius: 20px;
+    display: inline-block;
+  }
+  
+  #grey {
+    background: grey;
+  }
+  
+  #white {
+    background: white;
+  }
+  #pink {
+    background: pink;
+  }
+  #yellow {
+    background: yellow;
+  }
+  #lightgreen {
+    background: lightgreen;
+  }
+  
