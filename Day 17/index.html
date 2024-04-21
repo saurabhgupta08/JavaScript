@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+</head>
+<body style="background-color: rgb(14, 13, 13); color: aliceblue;">
+    <ul id="images">
+        <li><img width="250px" id="lion" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Lion_waiting_in_Namibia.jpg/800px-Lion_waiting_in_Namibia.jpg" alt="image of lion"></li>
+        <li><img width="250" id="cat" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Cat_August_2010-4.jpg/1024px-Cat_August_2010-4.jpg" alt="image of cat"></li>
+        <li><img width="250" id="leopard" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/African_leopard_male_%28cropped%29.jpg/800px-African_leopard_male_%28cropped%29.jpg" alt="image of leopard"></li>
+        <li><img width="250" id="jaguar" src="https://upload.wikimedia.org/wikipedia/commons/0/0a/Standing_jaguar.jpg" alt="image of jaguar"></li>
+        <li><img width="250" id="tiger" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Walking_tiger_female.jpg/1024px-Walking_tiger_female.jpg" alt="image of tiger"></li>
+        <li><a id="goo" style="color: aliceblue;" href="https://www.google.com/webhp?hl=en&sa=X&ved=0ahUKEwjBurXHq7mFAxX8wzgGHYQqAtwQPAgJ">Google</a></li>
+    </ul>
+</body>
+<script>
+    // document.getElementById("cat").onclick=function(){        
+    //     alert('Cat ')
+    // }
+
+    // document.getElementById('cat').addEventListener('click',function(){
+    //     console.log("click on cat");
+    // },true)
+    
+    // document.getElementById('images').addEventListener('click',function(e){
+    //     console.log("click on images")
+    //     e.stopPropagation()
+    // },true)
+
+    // document.getElementById('goo').addEventListener('click',function(e){
+    //     e.preventDefault();
+    //     console.log('Clicked on google');
+    //     e.stopPropagation()
+    // },false)
+
+    document.querySelector("#images").addEventListener('click',function(e){
+        e.preventDefault()
+        console.log("Yooo this",e.target.parentNode);
+        
+        if(e.target.tagName==='IMG'){
+            let removeIt=e.target.parentNode
+            removeIt.remove()
+            // removeIt.parentNode.removeChild(removeIt)
+        }
+    })
+
+    
+</script>
+</html>

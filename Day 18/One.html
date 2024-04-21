@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async</title>
+</head>
+<body>
+    <h1>Hello World</h1>
+    <button id="stop">Stop</button>
+    
+</body>
+<script>
+    setTimeout(function(){
+        console.log("Saurabh Gupta");
+    },5000)
+    document.querySelector('h1').addEventListener('click',function(){
+        document.querySelector('h1').innerHTML='Namste Duniya'
+    })
+    let change=function(){
+        document.querySelector('h1').innerHTML='Goog Good'
+    }
+    let changreIt=setTimeout(change,2000)
+    document.querySelector('#stop').addEventListener('click',function(){
+        clearTimeout(changreIt)
+        console.log("Stopped");
+    })
+    
+    
+    
+</script>
+</html>
