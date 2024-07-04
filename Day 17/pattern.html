@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="input">ENter input</label>
+    <input type="text" id="input">
+    <input type="submit" id="ok">
+    <div id="result"></div>
+</body>
+<script>
+    document.getElementById("ok").addEventListener('click',function(){
+        let n = document.getElementById("input").value
+        console.log(n);
+        let patter="";
+
+        for(let i =1 ; i<=n;i++){
+            for(let j=1;j<=i;j++){
+                patter=patter+"*";
+            }
+            patter=patter+"<br>"
+        }
+        document.getElementById("result").innerHTML=patter;
+    })
+</script>
+</html>
