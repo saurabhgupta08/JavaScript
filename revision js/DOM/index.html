@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            background-color: rgb(53, 50, 50);
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>
+</body>
+<script>
+    function addLang(langName){
+        const li=document.createElement('li')
+        li.innerText=langName
+
+        document.querySelector(".language").appendChild(li)
+    }
+
+    addLang("Python")
+    addLang("C++")
+    addLang("C")
+</script>
+</html>
