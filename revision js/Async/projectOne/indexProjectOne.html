@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async Code</title>
+    <style>
+        body{
+            background-color: #212121;
+            color: aliceblue;
+        }
+        button{
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello I'm Saurabh Gupta</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    let inter
+    document.querySelector("#start").addEventListener("click",function(){
+        inter=setInterval(function(){
+            console.log("Hello",Date.now())
+        },2000)
+    })
+    document.querySelector("#stop").addEventListener("click",function(){
+        clearInterval(inter)
+        console.log("stopped")
+    })
+</script>
+</html>

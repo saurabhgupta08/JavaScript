@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Background Color Change</title>
+    <style>
+        body{
+            background-color: #212121;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Random Background color changes</h1>
+    <button id="stop">Stop</button>
+    <button id="start">start</button>
+</body>
+<script>
+    let inter
+    document.querySelector("#start").addEventListener("click",function(){
+        inter=setInterval(function(){
+            let hex='#' + Math.floor(Math.random() * 16777215).toString(16).padStart(6, '0');
+            document.querySelector("body").style.backgroundColor=`${hex}`
+        },1000)
+    })
+    document.querySelector("#stop").addEventListener("click",function(){
+        clearInterval(inter)
+        console.log("stopped")
+    })
+</script>
+</html>
